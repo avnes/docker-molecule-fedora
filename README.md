@@ -3,8 +3,8 @@
 Used to test Ansible roles with molecule.
 
 ```bash
-docker pull docker.pkg.github.com/avnes/molecule-fedora:latest
-docker pull docker.pkg.github.com/avnes/molecule-fedora:<release>
+docker pull ghcr.io/avnes/molecule-fedora:latest
+docker pull ghcr.io/avnes/molecule-fedora:<release>
 ```
 
 The release number reflects the base docker image.
@@ -19,7 +19,7 @@ driver:
   name: docker
 platforms:
   - name: instance
-    image: docker.pkg.github.com/avnes/molecule-fedora:v34
+    image: ghcr.io/avnes/molecule-fedora:34
     pre_build_image: true
 provisioner:
   name: ansible
