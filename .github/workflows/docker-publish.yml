@@ -39,7 +39,7 @@ jobs:
     needs: test
 
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' || github.event_name == 'published'
+    if: github.event_name == 'push' || github.event_name == 'release'
 
     permissions:
       contents: read
