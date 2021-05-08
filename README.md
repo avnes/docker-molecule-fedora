@@ -2,13 +2,6 @@
 
 Used to test Ansible roles with molecule on Docker.
 
-```bash
-docker pull ghcr.io/avnes/molecule-fedora:latest
-docker pull ghcr.io/avnes/molecule-fedora:<release>
-```
-
-The release number reflects the base docker image.
-
 ## Molecule example
 
 ```yaml
@@ -19,7 +12,7 @@ driver:
   name: docker
 platforms:
   - name: instance
-    image: ghcr.io/avnes/molecule-fedora:34
+    image: ghcr.io/avnes/docker-molecule-fedora/molecule-fedora:latest
     pre_build_image: true
 provisioner:
   name: ansible
