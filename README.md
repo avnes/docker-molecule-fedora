@@ -3,10 +3,9 @@
 Used to test Ansible roles with molecule.
 
 ```bash
-docker pull docker.io/avnes/molecule-fedora:<version>
+docker pull docker.pkg.github.com/avnes/molecule-fedora:v<release>
 ```
 
-Check <https://hub.docker.com/r/avnes/molecule-fedora/tags> for available versions.
 The version number reflects the base docker image.
 
 ## Molecule example
@@ -19,7 +18,7 @@ driver:
   name: docker
 platforms:
   - name: instance
-    image: docker.io/avnes/molecule-fedora:34
+    image: docker.pkg.github.com/molecule-fedora:v34
     pre_build_image: true
 provisioner:
   name: ansible
