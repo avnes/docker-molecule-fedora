@@ -1,6 +1,6 @@
 # docker-molecule-fedora
 
-Used to test Ansible roles with molecule.
+Used to test Ansible roles with molecule on Docker.
 
 ```bash
 docker pull ghcr.io/avnes/molecule-fedora:latest
