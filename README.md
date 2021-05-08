@@ -3,10 +3,11 @@
 Used to test Ansible roles with molecule.
 
 ```bash
-docker pull docker.pkg.github.com/avnes/molecule-fedora:v<release>
+docker pull docker.pkg.github.com/avnes/molecule-fedora:latest
+docker pull docker.pkg.github.com/avnes/molecule-fedora:<release>
 ```
 
-The version number reflects the base docker image.
+The release number reflects the base docker image.
 
 ## Molecule example
 
